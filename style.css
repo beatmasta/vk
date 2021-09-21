@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+}
+
+:root {
+    --titleFontFamily: 'TT Commons Medium', sans-serif;
+}
+
+.page-section {
+    position: relative;
+    width: 100%;
+    padding-bottom: 72px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-section::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 72px;
+    background-image: linear-gradient(180deg, #ffffff, #f5f5f5);
+}
+
+.text-image-container {
+    display: flex;
+    padding-top: 120px;
+}
+
+.page-section-inner {
+    width: 65%;
+}
+
+.text-container {
+    width: 50%;
+}
+
+.text-container > p {
+    font-size: 21px;
+    line-height: 1.5;
+    margin-top: 57px;
+}
+
+.text-container .page-title {
+    margin: 0;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.text-container .page-title > * {
+    font-family: var(--titleFontFamily);
+}
+
+.text-container .page-title > h1 {
+    font-size: 60px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #4986CC14;
+    color: #2787F5;
+}
+
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container > img {
+    width: 90%;
+}
+
+.stats {
+    display: flex;
+    width: 100%;
+    margin-top: 79px;
+}
+
+.stats .stat-container {
+    padding-right: 88px;
+}
+
+.stats .stat-container > h3 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: TT Commons, sans-serif;
+}
